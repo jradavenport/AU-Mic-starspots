@@ -1,0 +1,26 @@
+# PLANET PROPERTIES
+0
+# STAR PROPERTIES
+5.0  # stellar density
+4.8373145159062005  # rotation period
+5500 # temperature (not used)
+0.0 # metallicity (not used)
+15.0 # inclination (in degrees)
+0.4989   0.4289   -0.0174  -0.0807 # 4th order limb darkening coeffs, using GJ1243 values for now...
+40 # number of radial rings for limb darkening
+# SPOT PROPERTIES
+2 # number spots
+0.7 # spot contrast
+# FITTING PROPERTIES
+tess_lc.dat # file to model
+1325.373 # t_start
+25.0 # duration to model in days
+1.0361227			; real maximum of light curve data (corrected for noise), 0 -> use downfrommax
+0				; is light curve flattened (to zero) outside of transits?
+# ACTION
+M # full MCMC fit
+237429296	; random seed
+2.0		; ascale
+50		; number of chains (walkers)
+20000		; mcmc steps
+0		; 0= use downfrommax normalization, 1= calculate brightness factor for every model
